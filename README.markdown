@@ -1,4 +1,3 @@
-## DH Karaoke Suggestitron
+## SAA2012 Jam Suggestitron
 
-Just a little sample Rails application created as a tutorial for the Scholars' Lab's [Praxis Program](http://praxis.scholarslab.org/).
-One version is up as the [Waynebot Suggestitron](http://waynebot.herokuapp.com) (see waynebot branch), and this version is live here: [http://DHoke.herokuapp.com/](http://DHoke.herokuapp.com/).
+Forked from nowviskie's DH Karaoke Suggestitron.
