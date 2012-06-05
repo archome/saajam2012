@@ -2,6 +2,7 @@ Suggestitron::Application.routes.draw do
 
   resources :votes
   resources :topics
+  resources :about
   root :to => 'topics#index'
   
   # The priority is based upon order of creation:
