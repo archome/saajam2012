@@ -4,12 +4,12 @@
   <h2>Let's hear it!</h2>
   <p>
   <b>Sing...</b>
-  <%= @topic.title %>
+  &#8220;<%= @topic.title %>&#8221;
   </p>
 
   <p>
   <b>By the one and only...</b>
-  &#8220;<%= @topic.description %>&#8221;
+  <%= @topic.description %>
   </p>
   <% unless(@topic.url.nil?) %>
     <p>

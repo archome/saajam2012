@@ -5,11 +5,11 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Orbitron:700,400' rel='stylesheet' type='text/css'> 
+  <link href='http://fonts.googleapis.com/css?family=Graduate:700,400' rel='stylesheet' type='text/css'> 
   <style media="screen">
 html, body {
   color: #444;
-  font-family: 'Orbitron', verdana, arial, helvetica, sans-serif;
+  font-family: 'Graduate', verdana, arial, helvetica, sans-serif;
   font-size: 14px;
   line-height: 22px;
   height:100%;
@@ -33,12 +33,11 @@ h1 a {
   font-size: x-large; }
 .main {
   padding: 1em;
-  width: 60%;
+  width: 50%;
   background-color: #fff;
-  opacity: 0.8;
-  filter:alpha(opacity=80); }
+ }
 .blurb {
-  width: 40%; }
+  width: 50%; }
 .container {
   min-height: 100%;
   position:relative;
@@ -86,7 +85,7 @@ h1 a {
   <div class="container">
 
 <%= yield %>
-<div class="footer"><p><em>(Get the <a href="http://github.com/nowviskie/Suggestitron">code</a>.)</em></p></div>
+<div class="footer"><p><em>(Get the <a href="https://github.com/archome/saa2012jam">code</a>. Based on <a href="https://github.com/nowviskie/Suggestitron">Suggestitron</a>.)</em></p></div>
 </div> 
 </body>
 </html>

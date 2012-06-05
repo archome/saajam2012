@@ -2,7 +2,7 @@
       <div class="search">
       <%= form_tag request.path, :method => 'get' do %>
       <% content_tag :label do %>
-    Singer:
+    Search:
     <%= text_field_tag :search, params[:search] %>
   <% end %>
 <% end %>
@@ -21,15 +21,16 @@
 
 <% @topics.each do |topic| %>
   <tr>
-    <td><%= topic.title %></td>
-    <td>"<%= link_to(topic.description, topic) %>"</td>
+    <td>&#8220;<%= link_to(topic.title, topic) %>&#8221;</td>
+    <td><%= link_to(topic.description, topic) %></td>
     <td>&nbsp;<%= pluralize(topic.votes.length, "vote") %>&nbsp;/&nbsp;<%= link_to '+1', votes_path(:topic_id => topic.id), :method => :post %></td> 
   </td>
   </tr>
 <% end %>
 </table>
 
-<h3><%= link_to 'Who\'s Up Next?', new_topic_path %></h3>
+<h3><%= link_to 'Submit a request →', new_topic_path %></h3>
+<h3><%= link_to 'About the SAA Jam 2012 →', 'http://hillelarnold.com/saajam.html' %></h3>
 
 <p><%= will_paginate @topics %></p>
 
