@@ -21,10 +21,11 @@
   | Add your
   <%= link_to '+1', votes_path(:topic_id => @topic), :method => :post %>.
   </p>
+
+  <div><%= link_to 'Edit', edit_topic_path(@topic) %> | 
+  <%= link_to 'Back', topics_path %></div>
   
   <h2>Comments</h2>
   <%= raw(disqus_thread) %>
 
-  <%= link_to 'Edit', edit_topic_path(@topic) %> | 
-  <%= link_to 'Back', topics_path %>
 </div>
